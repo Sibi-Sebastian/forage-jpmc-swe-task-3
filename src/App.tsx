@@ -19,7 +19,7 @@ class App extends Component<{}, IState> {
 
   renderGraph() {
     if (this.state.showGraph) {
-      return (<Graph data={this.state.data}/>)
+      return (<Graph data={this.state.data} />)
     }
   }
 
@@ -46,7 +46,7 @@ class App extends Component<{}, IState> {
           Bank Merge & Co Task 3
         </header>
         <div className="App-content">
-          <button className="btn btn-primary Stream-button" onClick={() => {this.getDataFromServer()}}>Start Streaming Data</button>
+          <button className="btn btn-primary Stream-button" onClick={() => { this.getDataFromServer() }}>Start Streaming Data</button>
           <div className="Graph">
             {this.renderGraph()}
           </div>
